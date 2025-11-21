@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsappg14/widgets/cabecera_status_widget.dart';
+import 'package:whatsappg14/widgets/item_status_widget.dart';
 
 class StatusPage extends StatelessWidget {
   const StatusPage({super.key});
@@ -8,7 +8,7 @@ class StatusPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CabeceraStatusWidget(),
+        ItemStatusWidget(isCabecera: true),
         Container(
           padding: EdgeInsets.all(4),
           width: double.infinity,
@@ -23,6 +23,13 @@ class StatusPage extends StatelessWidget {
             ),
           ),
         ),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
+        ItemStatusWidget(),
       ],
     );
   }
