@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsappg14/pages/chats_page.dart';
+import 'package:whatsappg14/pages/status_page.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
           children: [
             Center(child: Text("1")),
             ChatsPage(),
-            Center(child: Text("1")),
+            StatusPage(),
             Center(child: Text("1")),
           ],
         ),
